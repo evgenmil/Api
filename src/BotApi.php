@@ -350,7 +350,7 @@ class BotApi
             'message_thread_id' => $messageThreadId,
             'parse_mode' => $parseMode,
             'disable_web_page_preview' => $disablePreview,
-            'reply_to_message_id' => (int)$replyToMessageId,
+            'reply_to_message_id' => $replyToMessageId,
             'reply_markup' => is_null($replyMarkup) ? $replyMarkup : $replyMarkup->toJson(),
             'disable_notification' => (bool)$disableNotification,
         ]));
